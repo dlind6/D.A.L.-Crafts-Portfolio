@@ -1,139 +1,135 @@
 <!doctype html>
 <!-- https://codepen.io/FrontEndHenry/pen/poQqYwm -->
 <html>
+
 <head>
-<meta charset="utf-8">
-<title> About me</title>
-<link href="../styles.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<title> About me</title>
+	<link href="../styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-	
-<header class="header">
-	<!-- Logo IMG-->	
-	<img src="../images/Logo.png" alt="site logo and tag line: D.A.L. Crafts. 
-									They said mix media, so I did" 
-			width="148" height="94">
-	<h1 class="title"> About Me </h1>
 
-		<div class="port_nav_drop"> 
-		<ul>
-			<li><a href="../index.html"> Home </a></li>
-			<li><a href="#"> Portfolios </a>
-				<ul class="dropdown">
-					<li> <a href="photos.html"> Photography </a></li>
-					<li> <a href="video Edits.html"> Video Edits </a></li>
-					<li> <a href="sketches.html"> Drawings &amp; Sketches </a></li>
-					<li> <a href="2D Animation.html"> 2D Animation <br> (Coming Soon)</a></li>
-					<li> <a href="3D Animation Modeling.html"> 3D Animation &amp; Modeling </a></li>
-					<li> <a href="3D Prints.html"> 3D Prints </a></li>
-				</ul>
-			</li>
-			<li><a href="about_me.html"> About Me</a></li>
-		</ul>
+	<header class="header">
+		<!-- Logo IMG-->
+		<img src="../images/Logo.png" alt="site logo and tag line: D.A.L. Crafts. 
+									They said mix media, so I did" width="148" height="94">
+		<h1 class="title"> About Me </h1>
+
+		<div class="port_nav_drop">
+			<ul>
+				<li><a href="../index.html"> Home </a></li>
+				<li><a href="#"> Portfolios </a>
+					<ul class="dropdown">
+						<li> <a href="photos.html"> Photography </a></li>
+						<li> <a href="video Edits.html"> Video Edits </a></li>
+						<li> <a href="sketches.html"> Drawings &amp; Sketches </a></li>
+						<li> <a href="2D Animation.html"> 2D Animation <br> (Coming Soon)</a></li>
+						<li> <a href="3D Animation Modeling.html"> 3D Animation &amp; Modeling </a></li>
+						<li> <a href="3D Prints.html"> 3D Prints </a></li>
+					</ul>
+				</li>
+				<li><a href="about_me.html"> About Me</a></li>
+			</ul>
 		</div>
-      
-	
-</header>
-	
-<main>
-<!--About Me-->
-	<div class="about_me">
-	<h2>ABOUT ME &amp; DAL CRAFTS</h2>
-	<hr>
-		<p>
-		When I started my artistic journey they said "mix media", so I did, and I took it as a challenge to do so.<br>
-		From drawing to 3D modeling to photography,
-		I am always experimenting with new techniques.
-		Mixing and matching media to create truly
-		one-of-a-kind pieces, all while honing my skills for the individual crafts.<br>
-		Every project poses a unique challenge, utilizing my diversity of skills and experiance to produce a peice personalized art.
-		<br>
-		So I started DAL Crafts to document my journey along the way.
-		I am excited to share my passion with the world and connect with other creators who share my love of all things artistic.</p>
-	
-	</div>
-	
-	<div id="profile">
-	<img src="../images/Sketches and Drawings/IMG_4877.JPG" alt="" width="600" height="400">
-	</div>
-<!-- Commission -->	
-  <div class="commission">
-		<h1>Commission</h1>
-			<form id="commissionForm" onsubmit="return formVal()">
 
-			<label for="fname"> First Name:</label>
-			<input type="text" id="fname" name="fname" placeholder="John/Jane" size="25"> <br><br>
 
-			<label for="lname"> Last Name:</label>
-			<input type="text" id="lname" name="lname" placeholder="Doe" size="25"> <br><br>
-			
-			<label for="email"> Email: </label>
-			<input name="email" type="text" id="email" placeholder="email" size="25">
+	</header>
+
+	<main>
+		<!--About Me-->
+		<div class="about_me">
+			<h2>ABOUT ME &amp; DAL CRAFTS</h2>
+			<hr>
+			<p>
+				When I started my artistic journey they said "mix media", so I did, and I took it as a challenge to do so.<br>
+				From drawing to 3D modeling to photography,
+				I am always experimenting with new techniques.
+				Mixing and matching media to create truly
+				one-of-a-kind pieces, all while honing my skills for the individual crafts.<br>
+				Every project poses a unique challenge, utilizing my diversity of skills and experiance to produce a peice
+				personalized art.
+				<br>
+				So I started DAL Crafts to document my journey along the way.
+				I am excited to share my passion with the world and connect with other creators who share my love of all things
+				artistic.
+			</p>
+
+		</div>
+
+		<div id="profile">
+			<img src="../images/Sketches and Drawings/IMG_4877.JPG" alt="" width="600" height="400">
+		</div>
+		<!-- Commission -->
+		<div class="commission">
+			<h1>Commission</h1>
+			<!-- Updated form for Formspree integration -->
+			<form id="commissionForm" action="https://formspree.io/f/xgvyynjl" method="POST">
+				<label for="fname"> First Name:</label>
+				<input type="text" id="fname" name="fname" placeholder="John/Jane" size="25"> <br><br>
+
+				<label for="lname"> Last Name:</label>
+				<input type="text" id="lname" name="lname" placeholder="Doe" size="25"> <br><br>
+
+				<label for="email"> Email: </label>
+				<input name="email" type="email" id="email" placeholder="email" size="25" required>
 				<br><br>
 
-			<div id="checkbox_cont">
-			<input type="checkbox" id="vids_edit" name="vids_edit" onclick="updateDescr(this.id)">
-			<label for="vids_edit"> Video Edit</label>
+				<div id="checkbox_cont">
+					<input type="checkbox" id="vids_edit" name="commission_type" onclick="updateDescr(this.id)">
+					<label for="vids_edit"> Video Edit</label>
 
-			<input type="checkbox" id="Com_2D_Ani" name="Com_2D_Ani" onclick="updateDescr(this.id)">
-			<label for="Com_2D_Ani"> 2D Animation</label>
-		
-			
-			<input type="checkbox" id="Com_3D_Ani" name="Com_3D_Ani" onclick="updateDescr(this.id)">
-			<label for="Com_3D_Ani"> 3D Animation</label>
+					<input type="checkbox" id="Com_2D_Ani" name="commission_type" onclick="updateDescr(this.id)">
+					<label for="Com_2D_Ani"> 2D Animation</label>
 
-			<br>
-			
-			<input type="checkbox" id="drawing" name="drawing" onclick="updateDescr(this.id)">
-			<label for="drawing"> Drawing</label>
-			
-			
-			<input type="checkbox" id="Com_3D_Model" name="Com_3D_Model" onclick="updateDescr(this.id)">
-			<label for="Com_3D_Model"> 3D Modeling</label>
+					<input type="checkbox" id="Com_3D_Ani" name="commission_type" onclick="updateDescr(this.id)">
+					<label for="Com_3D_Ani"> 3D Animation</label>
 
-			
-			<input type="checkbox" id="Com_3D_Print" name="Com_3D_Print" onclick="updateDescr(this.id)">
-			<label for="Com_3D_Print"> 3D Print</label>
-			</div>
-			<hr>
-			
-			<div id="timestampContainer">
-				<label for="timestamp">Length:</label>
-				<input type="text" class="timestamp" placeholder="hh:mm:ss:ff">
-			</div>
+					<br>
 
-			<label id="printLabel" style="display: none;">Material type</label>
-			<input type="text" id="printInput" style="display: none;" placeholder="PLA, Color, dementions (mm)">
+					<input type="checkbox" id="drawing" name="commission_type" onclick="updateDescr(this.id)">
+					<label for="drawing"> Drawing</label>
 
+					<input type="checkbox" id="Com_3D_Model" name="commission_type" onclick="updateDescr(this.id)">
+					<label for="Com_3D_Model"> 3D Modeling</label>
 
-			<label for="describe" id="descLabel" style="display: none;">Commission Details:</label>
-			<textarea rows="5" maxlength="250" id="describe" style="display: none;"></textarea>
+					<input type="checkbox" id="Com_3D_Print" name="commission_type" onclick="updateDescr(this.id)">
+					<label for="Com_3D_Print"> 3D Print</label>
+				</div>
+				<hr>
 
-			<label for="filiment"></label>
+				<div id="timestampContainer" style="display:none;">
+					<label for="timestamp">Length:</label>
+					<input type="text" class="timestamp" name="timestamp" placeholder="hh:mm:ss:ff">
+				</div>
 
-			<input type="submit">
+				<label id="printLabel" style="display: none;" for="printInput">Material type</label>
+				<input type="text" id="printInput" name="print_material" style="display: none;"
+					placeholder="PLA, Color, dimensions (mm)">
+
+				<label for="describe" id="descLabel" style="display: none;">Commission Details:</label>
+				<textarea rows="5" maxlength="250" id="describe" name="details" style="display: none;"></textarea>
+
+				<input type="submit">
 			</form>
 
-		
-	</div>
-</main>
-	
-	
-	
-	
-<footer>
-	<p class="copy">&copy; Dennis A. Lind</p>
-	<p>Contact me <br>
-	<a href="#"> Email	
-	<i class="fa fa-envelope-o"></i></a>  
-	<br>
-	<a href="#">Phone	
-	<i class="fa fa-phone"></i></a>
-	</p>
-</footer>	
-	
-<script src="../JS/commission.js"></script> 
-</body>
-</html>
+		</div>
+	</main>
 
+	<footer>
+		<p class="copy">&copy; Dennis A. Lind</p>
+		<p>Contact me <br>
+			<a href="#"> Email
+				<i class="fa fa-envelope-o"></i></a>
+			<br>
+			<a href="#">Phone
+				<i class="fa fa-phone"></i></a>
+		</p>
+	</footer>
+
+	<!-- Place your commission.js here or keep your external JS include as below -->
+	<script src="../JS/commission.js"></script>
+</body>
+
+</html>
