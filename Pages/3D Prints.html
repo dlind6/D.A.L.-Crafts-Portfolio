@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> 3D Prints </title>
+<link href="../styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vh;
+    margin-inline: auto;
+    max-width: 40rem;
+    background: #141414;
+    padding: 1vh;
+}
+
+ .gallery > img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.gallery:has(img:hover) img:not(:hover) {
+    scale: 0.7;
+    opacity: 0.5;
+    filter: grayscale(70%);
+}
+
+.gallery img:hover{
+	scale: 1.08;
+	object-position: center;
+}
+	
+</style>
+</head>
+<body>
+	
+<header class="header">
+	<!-- Logo IMG-->	
+	<img src="../images/Logo.png" alt="site logo and tag line: D.A.L. Crafts. 
+									They said mix media, so I did" 
+		 width="148" height="94">
+	<h1 class="title"> D.A.L. Crafts </h1>
+
+	  <div class="port_nav_drop"> 
+		<ul>
+			<li><a href="../Home.html"> Home </a></li>
+			<li><a href="#"> Portfolios </a>
+				<ul class="dropdown">
+					<li> <a href="photos.html"> Photography </a></li>
+					<li> <a href="video Edits.html"> Video Edits </a></li>
+					<li> <a href="sketches.html"> Drawings &amp; Sketches </a></li>
+					<li> <a href="2D Animation.html"> 2D Animation <br> (Coming Soon)</a></li>
+					<li> <a href="3D Animation Modeling.html"> 3D Animation &amp; Modeling </a></li>
+					<li> <a href="3D Prints.html"> 3D Prints </a></li>
+				</ul>
+			</li>
+			<li><a href="about_me.html"> About Me</a></li>
+		</ul>  
+     </div>
+      
+	
+</header>
+
+<nav> 3D Prints</nav>
+	
+	
+	
+		
+<main class="gallery">
+	<img src="../images/3D Prints/red and black wolf.jpg" alt="">
+	<img src="../images/3D Prints/IMG_4307.jpg" alt="">
+	<img src="../images/3D Prints/IMG_4308.jpg" alt="">
+	<img src="../images/3D Prints/IMG_4306.jpg" alt="">
+
+</main>
+	
+	
+	
+	
+<footer>
+	<p class="copy">&copy; Dennis A. Lind</p>
+	<a href="https://www.3dprintlog.com/users/18559"> 3D Print Log </a>
+	<br>
+	<a href="#"> Email	
+	<i class="fa fa-envelope-o"></i></a>  
+	<br>
+	<a href="#">Phone	
+	<i class="fa fa-phone"></i></a>
+
+</footer>	
+</body>
+</html>

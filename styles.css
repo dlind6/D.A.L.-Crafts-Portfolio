@@ -1,0 +1,369 @@
+@charset "utf-8";
+/*-- All Pages --*/
+* {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 18px
+}
+	body{
+		background-image: url("images/wp bg.jpg");
+		height: 100vh;
+		width: 100%;
+		/*display: flex;*/
+		justify-content: center;
+		align-items: center;
+}
+
+	/*------------*/
+	/*-- Header --*/
+	.header {
+		background-color:#EEEEEE;
+		position:sticky;
+		top:0;
+		z-index: 999;
+		height: 97px;
+}
+
+	header img{
+		width:148;
+		height:100%;
+	}
+
+	.title{
+		width: 500px;
+		margin-left: 37%;
+		margin-top: -75px;
+		font-size: 2.5rem;
+		color: #000000;
+}
+
+
+	/*-- Porfolios Drop Down--*/
+		.port_nav_drop {
+			height: auto;
+			width: 500px;
+			text-align: center;
+			float: right;
+			margin-top: -90px;
+			
+		}
+		.port_nav_drop ul {
+			padding: 0;
+			width: 100%;
+			background-color: #4d7c8a;
+			border-radius: 10px 0 0 10px;
+		}
+		.port_nav_drop ul li {
+			padding: 0;
+			display: inline-block;
+			position: relative;
+		}
+		.port_nav_drop ul li a{
+			display: block;
+			padding: 10px;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+			font-size: 1rem;
+		}
+		.port_nav_drop ul li a:hover, nav_drop ul li a:focus {
+			color: #000;
+			background-color: #78c8e0;
+		}
+		.port_nav_drop ul li ul.dropdown li {
+			display: block;
+		}
+		.port_nav_drop ul li ul.dropdown {
+			width: 100%;
+			background-color: #3e7e80;
+			color: #fff;
+			position: absolute;
+			z-index: 999;
+			display: none;
+			border-radius: 0 0 10px 10px;
+		}
+		.port_nav_drop ul li:hover ul.dropdown,
+		.port_nav_drop ul li:focus ul.dropdown {
+		display: block;
+}
+
+nav{
+	height: 50px;
+	background-color: aliceblue;
+}
+
+	/*-- Footer --*/
+	footer {
+		background-color: #eeeeee;
+		height: 100px;
+		bottom: 0;
+		clear: both;
+		text-align: center;
+}
+	.copy {
+	
+	opacity: 40%
+}
+
+
+/*---- Home ----*/
+/*-- Main --*/
+	.home_main a {
+		text-decoration: none;
+		color: #333333;
+}
+
+	/*-- Page Tab --*/
+	.page_link {
+		background-color: #C6CACD;
+		height: 342px;
+		width: 620px;
+}
+	.page_left_img   {
+		float: left;
+		border-radius: ;
+}
+	.page_right_txt {
+		float: right;
+		color: darkslategray;
+		font-size: 1rem;
+		padding-right: 13%;
+
+}
+	.page_link_title {
+		text-align: center;
+		position: relative;
+		padding-top: 8rem;
+}
+
+
+	/*-- Homepage Page Selector --*/
+	#photos_html, #sketches_html ,#three_D_html {
+		float: left;
+		margin-top: 30px;
+		margin-left: 5%;
+	}
+	#vids_html, #two_D_html ,#three_D_Print_html {
+		float: right;
+		margin-top: 30px;
+		margin-right: 5%;
+	}
+
+/*-- Photos --*/
+	/*-- Nav --*/
+
+	aside{
+		margin-left: 20px;
+		margin-top: 5px;
+		background-color: cornflowerblue;
+		float: left;
+		width: 500px;
+		height: auto;
+		text-align: center
+		
+	}	
+	#slideshow{
+		height: 300px;
+		width: auto;
+	}
+
+
+	/*--- Main ----*/
+	.photo_zoom{
+		background-color:burlywood;
+		align-content: center;
+		float: right
+
+		
+	}
+
+	.photo_thumb{
+		background-color: darkorchid;
+		width: 100%;
+		height: 400px
+	}
+	
+	.photo_thumb img{
+		width: 250px;
+		height: 250px;
+	}
+
+
+/*-- Video Edits --*/
+	/*-- Hosted --*/
+/*.youtube{
+	background-color: cornsilk
+}
+
+/*-- Self Hosted  --*/
+/*.vid_not_posted{
+	background-color: aliceblue;
+	width: 600px;
+}
+.vid_not_posted video{
+	position: relative;
+}
+*/
+
+
+
+/*-- 3D Animation / Modeling --*/
+	.gallery{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1vh;
+			margin-inline: auto;
+			max-width: 40rem;
+			background: #694949;
+			padding: 1vh;
+	}
+
+	.gallery > video{
+			width: 100%;
+			aspect-ratio: 1 / 1;
+			object-fit: cover;
+			transition: all 0.3s ease;
+	}
+
+	.gallery:has(video:hover) video:not(:hover) {
+			scale: 0.7;
+			opacity: 0.5;
+			filter: grayscale(70%);
+	}
+
+	.gallery video:hover{
+		scale: 1.08;
+		object-position: center;
+	}
+		
+
+		.gallery_vids_left{
+			float: left;
+			margin-top: 25px;
+			margin-left: 75px;
+			background-color: azure;
+			width: 800px;
+			text-align: center;
+
+	}
+		.gallery_vids_right{
+			float: right;
+			margin-top: 25px;
+			margin-right: 75px;
+			background-color: azure;
+			width: 800px;
+			text-align: center;
+
+	}
+
+
+
+/*-- COMING SOON --*/
+	.coming_soon{
+		height: 400px;
+}
+
+.coming_soon h1{
+	text-align: center;
+	font-size: 5rem;
+	padding-top: 150px
+}
+
+
+/*-- About Me --*/
+
+
+.about_me{
+	align-content: center;
+	background-color: azure;
+	width: 500px;
+	height: 600px;
+	float: left;
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-bottom: 2%;
+	border-radius: 10px;
+
+}
+
+.about_me p{
+	font-style: italic;
+	font-size: 20px;
+	text-decoration: none;
+	font-variant: small-caps;
+	text-shadow: 0 0;
+	white-space: pre-line;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
+}
+.about_me h2  {
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	white-space: pre-wrap;
+}
+
+#profile {
+	float: left;
+	margin-top: 2%;
+	margin-left: 1%;
+	margin-right: 1%
+}
+
+
+.commission{
+	float: right;
+	background-color: azure;
+	width: 500px;
+	max-height: 600px;
+	margin-right: 7%;
+	margin-top: 2%;
+	padding-bottom: 15px;
+	text-align: center;	
+	overflow-y:unset;
+	text-align: center;
+	border-radius: 10px;
+
+}
+	#checkbox_cont{
+		display:block;
+		gap: 10px 20px;
+		justify-items: center;
+	}
+
+	#describe{
+		display: block;
+		margin: auto;
+		width: 50%;
+		max-width: 400px;
+		border-radius: 4px;
+	}
+
+	#timestampContainer{
+		display: none;
+		margin: 15px;
+	}
+
+	.timestamp{
+		display:inline-block;
+		width: 150px;
+		text-align: center;
+		font-size: 16px;
+		border-radius: 4px;
+	}
+
+	.timestamp.invalid {
+		border: 2px solid red;
+	}
+
+	.timestamp.valid {
+		border: 2px solid green;
+	}
+		
+#printInput {
+		display: inline-block;
+			text-align: center;
+			font-size: 16px;
+			border-radius: 4px;
+			margin: auto;
+}

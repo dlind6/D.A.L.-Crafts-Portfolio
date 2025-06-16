@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Video Edits</title>
+<link href="../styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+	gap: 1vh;
+	margin-inline: auto;
+	max-width: 80rem;
+	background: #141414;
+	padding: 1vh;
+    }
+
+.gallery > iframe {
+	width: 100%;
+	aspect-ratio: 1/ 1;
+	object-fit: contain;
+	transition: all 0.3s ease;
+    }
+
+.gallery:has(iframe:hover) iframe:not(:hover) {
+	transform: scale(0.7);
+	opacity: 0.5;
+	filter: grayscale(70%);
+    }
+
+.gallery iframe:hover {
+	transform: scale(1.008);
+	object-position: center center;
+ 
+}
+
+ .gallery > video{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain ;
+    transition: all 0.3s ease;
+}
+
+.gallery:has(video:hover) video:not(:hover) {
+    scale: 0.7;
+    opacity: 0.5;
+    filter: grayscale(70%);
+}
+
+.gallery video:hover{
+	scale: 1.08;
+	object-position: center;
+}
+
+</style>	
+
+</head>
+<body>
+	
+<header class="header">
+	<!-- Logo IMG-->	
+	<img src="../images/Logo.png" alt="site logo and tag line: D.A.L. Crafts. 
+									They said mix media, so I did" 
+		 width="148" height="94">
+	<h1 class="title"> D.A.L. Crafts </h1>
+
+	<div class="port_nav_drop"> 
+		<ul>
+			<li><a href="../Home.html"> Home </a></li>
+			<li><a href="#"> Portfolios </a>
+				<ul class="dropdown">
+					<li> <a href="photos.html"> Photography </a></li>
+					<li> <a href="video Edits.html"> Video Edits </a></li>
+					<li> <a href="sketches.html"> Drawings &amp; Sketches </a></li>
+					<li> <a href="2D Animation.html"> 2D Animation <br> (Coming Soon)</a></li>
+					<li> <a href="3D Animation Modeling.html"> 3D Animation &amp; Modeling </a></li>
+					<li> <a href="3D Prints.html"> 3D Prints </a></li>
+				</ul>
+			</li>
+			<li><a href="about_me.html"> About Me</a></li>
+		</ul>
+	</div>
+      
+	
+</header>
+	
+	
+<!--<main class="gallery">
+    <div class="gallery_vids_right">
+        <div>
+            <p class="name">ATLA Gas Mask MV</p>
+            <video width="560" height="315" controls loop>
+                <source src="../media/videos/ATLA Gas Mask MV_YouTube.mp4">
+            </video>
+            <p class="description">Class Edit</p>
+        </div>
+
+        <div>
+            <p class="name">Gunsmoke Edit</p>
+            <video width="560" height="315" controls loop>
+                <source src="../media/videos/Gunsmoke Edit.mp4">
+            </video>
+            <p class="description">Class Edit</p>
+        </div>
+
+        <div>
+            <p class="name">LOZ Multiverse Trailer - Game Over</p>
+            <video width="560" height="315" controls>
+                <source src="../media/videos/LOZ Multiverse Trailor_YouTube.mp4" type="video/mp4">
+            </video>
+            <p class="description">Class Edit</p>
+        </div>
+
+        <div>
+            <p class="name">The Damned - Awaken</p>
+            <video width="560" height="315" controls>
+                <source src="../media/videos/The Damned - Awaken.mp4" type="video/mp4">
+            </video>
+            <p class="description">Class Edit</p>
+        </div>
+    </div>
+</main>
+	
+	-->
+	
+<main>
+	<div class="gallery_vids_left">
+		<h2>Posted </h2>
+		<div class="gallery">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FITZlYAv29c?si=vpqRgKQhjCqX26CZ" title="YouTube video player" frameborder="0"> </iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/zlC7FinjHMY?si=EvWPqqOlS11E4xPP" title="Youtube video player" frameborder="0"></iframe>
+		</div>
+	</div>
+	
+	<div class="gallery_vids_right">
+		<h2>Not Posted</h2>
+		<div class="gallery">
+            <video width="560" height="315" controls="controls" loop="loop" > <source src="../meida/videos/LOZ Multiverse Trailor_YouTube.mp4"> </video>
+		  <video width="560" height="315" controls="controls" loop="loop" > <source src="../meida/videos/ATLA Gas Mask MV_YouTube.mp4"> </video>
+		</div>
+	</div>
+
+
+</main>
+	
+	
+	
+	
+	
+<footer>
+	<p class="copy">&copy; Dennis A. Lind</p>
+	<p>Contact me <br>
+	<a href="#"> Email	
+	<i class="fa fa-envelope-o"></i></a>  
+	<br>
+	<a href="#">Phone	
+	 <i class="fa fa-phone"></i></a>
+	</p>
+
+</footer>
+</body>
+</html>

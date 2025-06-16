@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3D Animation &amp; Modeling </title>
+<link href="../styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vh;
+    margin-inline: auto;
+    max-width: 40rem;
+    background: #141414;
+    padding: 1vh;
+}
+
+ .gallery > video{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.gallery:has(video:hover) video:not(:hover) {
+    scale: 0.7;
+    opacity: 0.5;
+    filter: grayscale(70%);
+}
+
+.gallery video:hover{
+	scale: 1.08;
+	object-position: center;
+}
+	
+</style>	
+	
+	
+	
+	
+	
+</head>
+<body>
+	
+<header class="header">
+	<!-- Logo IMG-->	
+	<img src="../images/Logo.png" alt="site logo and tag line: D.A.L. Crafts. 
+									They said mix media, so I did" 
+		 width="148" height="94">
+	<h1 class="title"> D.A.L. Crafts </h1>
+
+  	<div class="port_nav_drop"> 
+		<ul>
+			<li><a href="../Home.html"> Home </a></li>
+			<li><a href="#"> Portfolios </a>
+				<ul class="dropdown">
+					<li> <a href="photos.html"> Photography </a></li>
+					<li> <a href="video Edits.html"> Video Edits </a></li>
+					<li> <a href="sketches.html"> Drawings &amp; Sketches </a></li>
+					<li> <a href="2D Animation.html"> 2D Animation <br> (Coming Soon)</a></li>
+					<li> <a href="3D Animation Modeling.html"> 3D Animation &amp; Modeling </a></li>
+					<li> <a href="3D Prints.html"> 3D Prints </a></li>
+				</ul>
+			</li>
+			<li><a href="about_me.html"> About Me</a></li>
+		</ul>
+	</div>
+      
+	
+</header>
+
+	
+	
+	
+	
+<main>
+	<div class="gallery_vids_left">
+		<h2>Turn tabel</h2>
+		<div class="gallery">
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Switch Rotate Render.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Hungry Hungry Hippo Textured Render.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Toy Wooden Dog Render.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Vertebre (L1-L5).mp4"> </video>
+
+			
+		</div>
+	</div>
+	<div class="gallery_vids_right">
+		<h2>Animation</h2>
+		<div class="gallery">
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Lind_Fish_Animation.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Person Render.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Milk Duds.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/D Lind- Final Render.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Hungry Hungry Hippo.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Lind_Gumball.mp4"> </video>
+			<video controls="controls" loop="loop" > <source src="../meida/3D Animation/Lind_Liminal Stair CamMap_Final.mp4"> </video>
+		</div>
+	</div>
+
+
+</main>
+	
+	
+	
+	
+	
+	
+	
+	
+<footer>
+	<p class="copy">&copy; Dennis A. Lind</p>
+	<p>Contact me <br>
+	<a href="#"> Email	
+	<i class="fa fa-envelope-o"></i></a>  
+	<br>
+	<a href="#">Phone	
+	 <i class="fa fa-phone"></i></a>
+	</p>
+
+</footer>
+</body>
+</html>
